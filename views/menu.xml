@@ -11,15 +11,15 @@
               parent="crm_analytics_menu"
               action="action_customer_trends"/>
 
-    <!-- Submenu: Top Customers
+    <!-- Submenu: Top Customers -->
     <menuitem id="crm_analytics_top_customers_menu"
               name="Top Customers"
               parent="crm_analytics_menu"
               action="action_top_customers"/>
 
-    Submenu: Sales Forecast
+    <!-- Submenu: Sales Forecast -->
     <menuitem id="crm_analytics_forecast_menu"
               name="Sales Forecast"
               parent="crm_analytics_menu"
-              action="action_sales_forecast"/> -->
+              action="action_sales_forecast"/>
 </odoo>

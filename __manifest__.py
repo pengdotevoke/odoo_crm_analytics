@@ -6,7 +6,9 @@
     'description':'This module provides CRM analytics tools',
     'data':[
         'security/ir.model.access.csv',
-        'views/crm_dashboard_view.xml',
+        'views/crm_customer_trends_view.xml',
+        'views/crm_analytics_forecast_view.xml',
+        'views/crm_analytics_top_customers_view.xml',
         'views/menu.xml'
         ],
     'license':'LGPL-3',
