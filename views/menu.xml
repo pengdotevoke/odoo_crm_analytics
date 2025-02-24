@@ -1,0 +1,25 @@
+<odoo>
+    <!-- Parent Menu: Analytics under CRM -->
+    <menuitem id="crm_analytics_menu"
+              name="Analytics"
+              parent="crm.crm_menu_root"
+              sequence="10"/>
+
+    <!-- Submenu: Customer Trends -->
+    <menuitem id="crm_analytics_trends_menu"
+              name="Customer Trends"
+              parent="crm_analytics_menu"
+              action="action_customer_trends"/>
+
+    <!-- Submenu: Top Customers
+    <menuitem id="crm_analytics_top_customers_menu"
+              name="Top Customers"
+              parent="crm_analytics_menu"
+              action="action_top_customers"/>
+
+    Submenu: Sales Forecast
+    <menuitem id="crm_analytics_forecast_menu"
+              name="Sales Forecast"
+              parent="crm_analytics_menu"
+              action="action_sales_forecast"/> -->
+</odoo>

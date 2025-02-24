@@ -1,0 +1,48 @@
+<odoo>
+<!--Basic Form Tree Definition-->
+    <record id="action_customer_trends" model="ir.actions.act_window">
+        <field name="name">Customer Trends</field>
+        <field name="res_model">crm.dashboard</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">Create a new CRM record</p>
+        </field>
+    </record>
+    <!--Basic Form View-->
+    <record id="view_crm_dashboard_form" model="ir.ui.view">
+        <field name="name">CRM Trends</field>
+        <field name="model">crm.dashboard</field>
+        <field name="type">form</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="name" string="Name" required="1"/>
+                        </group>
+                        <group>
+                        </group>
+                    </group>
+                </sheet>
+                <!--Add chatter-->
+                <div class="oe_chatter">
+                    <field name="message_follower_ids"/>
+                    <field name="activity_ids"/>
+                    <field name="message_ids"/>
+                </div>
+            </form>
+        </field>
+    </record>
+    <!--Basic Tree View-->
+    <record id="view_crm_dashboard_tree" model="ir.ui.view">
+        <field name="name">CRM Trends</field>
+        <field name="model">crm.dashboard</field>
+        <field name="type">tree</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="name"/>
+            </tree>
+        </field>    
+    </record>
+
+</odoo>
