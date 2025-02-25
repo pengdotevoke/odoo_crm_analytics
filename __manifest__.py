@@ -1,7 +1,7 @@
 {
     'name':'Odoo CRM Analytics',
     'author':'James Oginga',
-    'depends':['crm','mail'],
+    'depends':['crm','mail','base'],
     'version':'1.0',
     'description':'This module provides CRM analytics tools',
     'data':[
